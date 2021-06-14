@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ApkButton">
+        <attr name="title" format="string" />
+        <attr name="subTitle" format="string" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="subTitleTextSize" format="dimension" />
+        <attr name="icon" format="reference" />
+        <attr name="textColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="textStyleTitle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="textStyleSubTitle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="scaleType">
+            <!-- Scale using the image matrix when drawing. See
+                 {@link android.widget.ImageView#setImageMatrix(Matrix)}. -->
+            <enum name="matrix" value="0" />
+            <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#FILL}. -->
+            <enum name="fitXY" value="1" />
+            <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#START}. -->
+            <enum name="fitStart" value="2" />
+            <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#CENTER}. -->
+            <enum name="fitCenter" value="3" />
+            <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#END}. -->
+            <enum name="fitEnd" value="4" />
+            <!-- Center the image in the view, but perform no scaling. -->
+            <enum name="center" value="5" />
+            <!-- Scale the image uniformly (maintain the image's aspect ratio) so both dimensions
+                 (width and height) of the image will be equal to or larger than the corresponding
+                 dimension of the view (minus padding). The image is then centered in the view. -->
+            <enum name="centerCrop" value="6" />
+            <!-- Scale the image uniformly (maintain the image's aspect ratio) so that both
+                 dimensions (width and height) of the image will be equal to or less than the
+                 corresponding dimension of the view (minus padding). The image is then centered in
+                 the view. -->
+            <enum name="centerInside" value="7" />
+        </attr>
+  </declare-styleable>
+</resources>
